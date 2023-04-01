@@ -48,4 +48,7 @@ public class ZwierzeController {
     public void delete (@PathVariable Integer id) {
         repository.deleteById(id);
     }
+
+
+
 }
