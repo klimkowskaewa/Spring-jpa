@@ -1,10 +1,19 @@
 package pl.edu.wszib.springjpa;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
 public class Zwierze {
+
+    enum Plec {
+        SAMIEC,
+        SAMICA,
+        INNE
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,7 +23,49 @@ public class Zwierze {
     private String nazwa;
     private Integer wiek;
     private String gatunek;
+  //  @Temporal(TemporalType.TIMESTAMP) LocalDateTime -> Date
     private LocalDateTime zapisane;
+    @CreationTimestamp
+    private LocalDateTime created;
+    @UpdateTimestamp
+    private LocalDateTime updated;
+    private Boolean albinos;
+    @Enumerated(EnumType.STRING)
+    private Plec plec;
+    @Transient
+    private boolean test = false;
+
+    public Plec getPlec() {
+        return plec;
+    }
+
+    public void setPlec(Plec plec) {
+        this.plec = plec;
+    }
+
+    public Boolean getAlbinos() {
+        return albinos;
+    }
+
+    public void setAlbinos(Boolean albinos) {
+        this.albinos = albinos;
+    }
+
+    public LocalDateTime getCreated() {
+        return created;
+    }
+
+    public void setCreated(LocalDateTime created) {
+        this.created = created;
+    }
+
+    public LocalDateTime getUpdated() {
+        return updated;
+    }
+
+    public void setUpdated(LocalDateTime updated) {
+        this.updated = updated;
+    }
 
     public LocalDateTime getZapisane() {
         return zapisane;

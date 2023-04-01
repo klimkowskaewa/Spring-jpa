@@ -7,7 +7,8 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface ZwierzeRepository extends JpaRepository<Zwierze, Integer>, JpaSpecificationExecutor<Zwierze> {
+public interface ZwierzeRepository extends JpaRepository<Zwierze, Integer> {
+//public interface ZwierzeRepository extends JpaRepository<Zwierze, Integer>, JpaSpecificationExecutor<Zwierze> {
 
     List<Zwierze> findAllByGatunek(String gatunek);
 

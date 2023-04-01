@@ -13,14 +13,15 @@ public class ZwierzeController {
     private ZwierzeRepository repository;
 
     @GetMapping
-    public List<Zwierze> list(@RequestParam(required = false) String gatunek, @RequestParam(required = false) String nazwa) {
-//        if (gatunek == null) {
-//            return repository.findAll();
-//        }
-//        return repository.findAllByGatunek(gatunek);
-        return repository.findAll(
-                ZwierzeSpecifications.findByGatunekAndName(gatunek, nazwa)
-        );
+    public List<Zwierze> list(@RequestParam(required = false) String gatunek) {
+   // public List<Zwierze> list(@RequestParam(required = false) String gatunek, @RequestParam(required = false) String nazwa) {
+        if (gatunek == null) {
+            return repository.findAll();
+        }
+        return repository.findAllByGatunek(gatunek);
+//        return repository.findAll(
+//                ZwierzeSpecifications.findByGatunekAndName(gatunek, nazwa)
+//        );
     }
 
     @GetMapping("/{id}")
