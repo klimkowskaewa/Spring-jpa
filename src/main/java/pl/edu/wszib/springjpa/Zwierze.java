@@ -1,6 +1,7 @@
 package pl.edu.wszib.springjpa;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 public class Zwierze {
@@ -13,6 +14,15 @@ public class Zwierze {
     private String nazwa;
     private Integer wiek;
     private String gatunek;
+    private LocalDateTime zapisane;
+
+    public LocalDateTime getZapisane() {
+        return zapisane;
+    }
+
+    public void setZapisane(LocalDateTime zapisane) {
+        this.zapisane = zapisane;
+    }
 
     public Integer getId() {
         return id;
