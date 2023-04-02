@@ -1,4 +1,4 @@
-package pl.edu.wszib.springjpa;
+package pl.edu.wszib.springjpa.praca;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

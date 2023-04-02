@@ -1,4 +1,4 @@
-package pl.edu.wszib.springjpa;
+package pl.edu.wszib.springjpa.zwierze;
 
 import org.springframework.data.jpa.domain.Specification;
 

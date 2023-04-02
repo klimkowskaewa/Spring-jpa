@@ -1,4 +1,4 @@
-package pl.edu.wszib.springjpa;
+package pl.edu.wszib.springjpa.praca;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
