@@ -1,4 +1,4 @@
-package pl.edu.wszib.census;
+package pl.edu.wszib.springjpa.census;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
