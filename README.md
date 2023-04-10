@@ -14,6 +14,6 @@ Thymeleaf template, Starter data jpa, mssql-jdbc.
    - [StringToInstantConverter](https://github.com/klimkowskaewa/Spring-jpa/blob/master/src/main/java/pl/edu/wszib/springjpa/StringToInstantConverter.java)
    - [Config](https://github.com/klimkowskaewa/Spring-jpa/blob/master/src/main/java/pl/edu/wszib/springjpa/Config.java)
    - [templates](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/resources/templates)
-   - [census](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/census)
+   - [census](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/census), [census html](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/resources/templates/census)
 
 
