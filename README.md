@@ -9,6 +9,9 @@ Thymeleaf template, Starter data jpa, mssql-jdbc.
 1. [census](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/census), [census html](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/resources/templates/census)
    an application which allows to add people to census, as a result there is a table view with id, name, surname and birthday. New entries can be added, edited or deleted.
 
+2. [shop](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/shop), [shop html](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/resources/templates/shop)
+   
+
 
    - [obraz](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/obraz)
    - [zwierze](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/zwierze)
