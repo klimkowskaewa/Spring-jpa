@@ -4,7 +4,7 @@ Spring-jpa repository contains files created to practice Spring - how to use ann
 
 Thymeleaf template, Starter data jpa, mssql-jdbc.
 
-@Configuration, @RestController, @RequestMapping, @Autowired, @GetMapping, @RequestParam,  @PostMapping, @PutMapping, @DeleteMapping, @PathVariable, @RequestBody, @Entity, @Id, @GeneratedValue, @CreationTimestamp, @UpdateTimestamp, @Enumerated, @Transient @OneToOne, @OneToMany, @JoinColumn, @JoinTable
+@Configuration, @RestController, @RequestMapping, @Autowired, @GetMapping, @RequestParam,  @PostMapping, @PutMapping, @DeleteMapping, @PathVariable, @RequestBody, @Entity, @Id, @GeneratedValue, @CreationTimestamp, @UpdateTimestamp, @Enumerated, @Transient @OneToOne, @OneToMany, @JoinColumn, @JoinTable, @JsonIgnore
 
 1. [census](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/census), [census html](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/resources/templates/census)
    an application which allows to add people to census, as a result there is a table view with id, name, surname and birthday. New entries can be added, edited or deleted.
