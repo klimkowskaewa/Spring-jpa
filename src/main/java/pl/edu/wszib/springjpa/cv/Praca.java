@@ -87,4 +87,13 @@ public class Praca {
   public void setUpdatedAt(Instant updatedAt) {
     this.updatedAt = updatedAt;
   }
+
+  public enum KompetencjaRodzaj {
+    JEZYK,
+    JEZYK_PROGRAMOWANIA,
+    BIBLIOTEKA,
+    NARZEDZIE,
+    SYSTEMY,
+    OGOLNE
+  }
 }
