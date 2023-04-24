@@ -1,17 +1,39 @@
-package pl.edu.wszib.springjpa.model;
+package pl.edu.wszib.springjpa.cv;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+import pl.edu.wszib.springjpa.model.KompetencjaRodzaj;
+
+import javax.persistence.*;
 import java.time.Instant;
 
+@Entity
 public class Kompetencja {
 
+  @Id
+  @GeneratedValue
   private Integer id;
+
+  @Enumerated(EnumType.STRING)
   private KompetencjaRodzaj rodzaj;
   private String nazwa;
   private Integer stopien;
+  @CreationTimestamp
   private Instant createdAt;
+  @UpdateTimestamp
   private Instant updatedAt;
+
+  @ManyToOne
+  @JoinColumn
+  private CV cv;
+
+  public CV getCv() {
+    return cv;
+  }
+
+  public void setCv(CV cv) {
+    this.cv = cv;
+  }
 
   public Integer getId() {
     return id;
