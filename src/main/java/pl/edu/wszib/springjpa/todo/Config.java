@@ -1,4 +1,4 @@
-package pl.edu.wszib.springjpa;
+package pl.edu.wszib.springjpa.todo;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;

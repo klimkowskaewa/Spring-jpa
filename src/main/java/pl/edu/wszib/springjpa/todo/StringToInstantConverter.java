@@ -1,4 +1,4 @@
-package pl.edu.wszib.springjpa;
+package pl.edu.wszib.springjpa.todo;
 
 import org.springframework.core.convert.converter.Converter;
 
