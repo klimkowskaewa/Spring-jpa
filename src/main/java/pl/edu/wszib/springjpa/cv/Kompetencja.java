@@ -2,7 +2,6 @@ package pl.edu.wszib.springjpa.cv;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import pl.edu.wszib.springjpa.model.KompetencjaRodzaj;
 
 import javax.persistence.*;
 import java.time.Instant;
@@ -15,7 +14,7 @@ public class Kompetencja {
   private Integer id;
 
   @Enumerated(EnumType.STRING)
-  private KompetencjaRodzaj rodzaj;
+  private Praca.KompetencjaRodzaj rodzaj;
   private String nazwa;
   private Integer stopien;
   @CreationTimestamp
@@ -43,11 +42,11 @@ public class Kompetencja {
     this.id = id;
   }
 
-  public KompetencjaRodzaj getRodzaj() {
+  public Praca.KompetencjaRodzaj getRodzaj() {
     return rodzaj;
   }
 
-  public void setRodzaj(KompetencjaRodzaj rodzaj) {
+  public void setRodzaj(Praca.KompetencjaRodzaj rodzaj) {
     this.rodzaj = rodzaj;
   }
 
