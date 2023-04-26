@@ -10,6 +10,8 @@ Thymeleaf template, Starter data jpa, mssql-jdbc.
    an application which allows to add people to census, as a result there is a table view with id, name, surname and birthday. New entries can be added, edited or deleted.
 
 2. [shop](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/shop), [shop html](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/resources/templates/shop)
+
+3. [cv](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/cv), [cv html](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/resources/templates/cv)
    
 
 
