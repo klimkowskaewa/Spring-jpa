@@ -32,14 +32,14 @@ public class CvController {
     @GetMapping
     public String list(Model model) {
         model.addAttribute("cvs", repository.findAll());
-        return "list-cv";
+        return "cv/list-cv";
     }
 
     @GetMapping("/dodaj")
     public String dodaj(Model model) {
         CV nowe = new CV();
         model.addAttribute("noweCv", nowe);
-        return "dodaj-cv";
+        return "cv/dodaj-cv";
     }
 
     @PostMapping("/dodaj")
@@ -56,7 +56,7 @@ public class CvController {
         model.addAttribute("cv",
                 repository.findById(id).get()
         );
-        return "widok-cv";
+        return "cv/widok-cv";
     }
 
     @GetMapping("/edytuj/{id}")
@@ -69,7 +69,7 @@ public class CvController {
         model.addAttribute("rodzaje", Praca.KompetencjaRodzaj.values());
         Praca nowaPraca = new Praca();
         model.addAttribute("nowaPraca", nowaPraca);
-        return "edytuj-cv";
+        return "cv/edytuj-cv";
     }
 
     @PostMapping("/edytuj/{id}")
