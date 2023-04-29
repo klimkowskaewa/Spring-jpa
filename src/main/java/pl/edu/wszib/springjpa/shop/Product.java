@@ -1,21 +1,9 @@
 package pl.edu.wszib.springjpa.shop;
 
-import org.springframework.data.annotation.Id;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Lob;
+import javax.persistence.*;
 
 @Entity
 public class Product {
-
-    enum Category{
-        DAIRY,
-        CHEMICALS,
-        BREAD,
-        SWEETS
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,6 +11,15 @@ public class Product {
     private String name;
     @Lob
     private byte[] picture;
+    private String mimeType;
+
+    public String getMimeType() {
+        return mimeType;
+    }
+
+    public void setMimeType(String mimeType) {
+        this.mimeType = mimeType;
+    }
 
     public Integer getId() {
         return id;
@@ -47,4 +44,5 @@ public class Product {
     public void setPicture(byte[] picture) {
         this.picture = picture;
     }
+
 }

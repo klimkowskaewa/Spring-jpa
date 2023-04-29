@@ -13,14 +13,19 @@ public class ShopController {
     @Autowired
     private ProductRepository productRepository;
 
+
+
     @GetMapping("/create")
     public String create (Model model){
         Product newProduct = new Product();
-        Product.Category[] categories = Product.Category.values();
+        Category[] categories = Category.values();
         model.addAttribute("newProduct", newProduct);
         model.addAttribute("categories", categories);
         return "shop/create";
     }
+
+
+
 
 
 }
