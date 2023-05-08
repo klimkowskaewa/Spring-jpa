@@ -19,5 +19,3 @@ Thymeleaf template, Starter data jpa, mssql-jdbc.
    - [praca](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/praca)
    - [crud service](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/java/pl/edu/wszib/springjpa/service)
    - [templates](https://github.com/klimkowskaewa/Spring-jpa/tree/master/src/main/resources/templates)
-
-
